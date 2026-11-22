@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion studies · Divyanshu Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#e9eaec,#141517);--ink:light-dark(#111214,#eceef1);--card:light-dark(#fff,#1d1f23);--line:light-dark(#d4d6da,#2c2f34);--mute:light-dark(#555a62,#9ba1a9);--acc:#ff4f00;--out:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Geist,system-ui,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:clamp(28px,5vw,72px) max(5vw,16px)}
+h1{font-size:clamp(36px,5vw,52px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0 0 12px;max-width:62ch;color:var(--mute);font-size:17px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;margin:18px 0 40px}.meta a{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+a.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .35s var(--out),box-shadow .35s var(--out)}
+a.card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(0,0,0,.35)}
+a.card:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+a.card img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line)}
+.body{padding:20px 22px 22px}
+.tag{font-size:13px;color:var(--acc);font-weight:600}
+h2{font-size:22px;margin:4px 0 8px;line-height:1.2}
+.body p{font-size:15px;margin:0}
+@media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){a.card{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Motion &amp; interaction studies</h1>
+  <p>Three live studies of how payments and credit can feel in motion. Every interaction is clickable, and each one has its duration, easing and reasoning written next to it.</p>
+  <div class="meta"><span>Divyanshu Singh</span><a href="https://divyanshu-singh-resume-portfolio.vercel.app">Portfolio</a><a href="https://github.com/divyanshus2404">GitHub</a><a href="https://linkedin.com/in/divyanshu-singh-2404s">LinkedIn</a></div>
+  <div class="grid">
+    <a class="card" href="pay-in-3/"><img src="shot-pay-in-3.png" alt="Pay in 3 checkout on a phone" width="1200" height="630"><div class="body"><div class="tag">Motion study</div><h2>Pay in 3, in motion</h2><p>Plan switcher, price split, a pay button that morphs into its loader, and an instalment tracker.</p></div></a>
+    <a class="card" href="limit-reveal/"><img src="shot-limit-reveal.png" alt="Credit limit ring revealing ₹25,000" width="1200" height="630"><div class="body"><div class="tag">Motion study</div><h2>Your limit, revealed</h2><p>Credit onboarding: KYC progress, a limit ring that counts up, a tilting card, skeleton loading.</p></div></a>
+    <a class="card" href="observed/"><img src="shot-observed.png" alt="Swipe to pay slider on a yellow background" width="1200" height="630"><div class="body"><div class="tag">Interaction study</div><h2>Small moments, observed</h2><p>Everyday Indian objects turned into payment interactions: shutter, head shake, kirana chit, gullak.</p></div></a>
+  </div>
+  <p style="font-size:13px;margin-top:32px">Personal concept studies. Not affiliated with or endorsed by any company. Amounts are sample data.</p>
+</main>
+</body>
+</html>
